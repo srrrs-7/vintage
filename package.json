@@ -11,12 +11,20 @@
         "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'"
     },
     "dependencies": {
+        "@emotion/react": "^11.9.3",
+        "@emotion/styled": "^11.9.3",
+        "@mui/icons-material": "^5.8.4",
+        "@mui/material": "^5.8.4",
+        "flowbite": "^1.4.7",
+        "flowbite-react": "^0.0.26",
         "next": "12.1.6",
         "react": "18.2.0",
-        "react-dom": "18.2.0"
+        "react-dom": "18.2.0",
+        "react-player": "^2.10.1",
+        "tw-elements": "^1.0.0-alpha12"
     },
     "devDependencies": {
-        "@types/node": "18.0.0",
+        "@types/node": "^18.0.0",
         "@types/react": "18.0.14",
         "@types/react-dom": "18.0.5",
         "autoprefixer": "^10.4.7",
@@ -36,5 +44,8 @@
         "singleQuote": true,
         "jsxSingleQuote": true,
         "printWidth": 100
+    },
+    "compilerOptions": {
+        "skipLibCheck": true
     }
 }

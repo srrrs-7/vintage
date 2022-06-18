@@ -8,5 +8,6 @@ module.exports = {
     variants: {
         extend: {},
     },
-    plugins: [],
+    content: ['./src/**/*.{html,js,ts}', './node_modules/tw-elements/dist/js/**/*.js'],
+    plugins: [require('tw-elements/dist/plugin')],
 };
