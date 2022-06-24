@@ -1,84 +1,98 @@
-import Image from 'next/image';
 import React from 'react';
-import Header from './Header';
+import 'tw-elements';
 
 const ImageGallery = () => {
   return (
-    <div>
-      <Header />
-      <div id='carouselExampleControls' className='relative carousel slide' data-bs-ride='carousel'>
-        <div className='overflow-hidden relative w-full carousel-inner'>
-          <div className='float-left relative w-full carousel-item active'>
-            <img
-              src='https://mdbcdn.b-cdn.net/img/new/slides/041.webp'
-              className='block w-full'
-              alt='Wild Landscape'
-            />
-          </div>
-          <div className='float-left relative w-full carousel-item'>
-            <img
-              src='https://mdbcdn.b-cdn.net/img/new/slides/042.webp'
-              className='block w-full'
-              alt='Camera'
-            />
-          </div>
-          <div className='float-left relative w-full carousel-item'>
-            <img
-              src='https://mdbcdn.b-cdn.net/img/new/slides/043.webp'
-              className='block w-full'
-              alt='Exotic Fruits'
-            />
+    <div className='bg-orange-100'>
+      <div className='flex'>
+        <h2 className='p-5 mx-auto font-serif text-7xl text-green-600 animate-pulse'>
+          Photo Gallery
+        </h2>
+      </div>
+      <section className='overflow-hidden text-gray-700 '>
+        <div className='container py-2 px-5 mx-auto lg:px-20 lg:pt-2'>
+          <div className='flex flex-wrap -m-1 md:-m-2'>
+            <div className='flex flex-wrap w-1/3'>
+              <div className='p-1 w-full md:p-2'>
+                <img
+                  alt='gallery'
+                  className='block object-cover object-center w-full h-full rounded-lg transition duration-150 ease-in-out hover:scale-105'
+                  src='/outdoor.jpg'
+                />
+              </div>
+            </div>
+            <div className='flex flex-wrap w-1/3'>
+              <div className='p-1 w-full md:p-2'>
+                <img
+                  alt='gallery'
+                  className='block object-cover object-center w-full h-full rounded-lg transition duration-150 ease-in-out hover:scale-105'
+                  src='/board.jpg'
+                />
+              </div>
+            </div>
+            <div className='flex flex-wrap w-1/3'>
+              <div className='p-1 w-full md:p-2'>
+                <img
+                  alt='gallery'
+                  className='block object-cover object-center w-full h-full rounded-lg transition duration-150 ease-in-out hover:scale-105'
+                  src='/night.jpg'
+                />
+              </div>
+            </div>
+            <div className='flex flex-wrap w-1/3'>
+              <div className='p-1 w-full md:p-2'>
+                <img
+                  alt='gallery'
+                  className='block object-cover object-center w-full h-full rounded-lg transition duration-150 ease-in-out hover:scale-105'
+                  src='/workchair.jpg'
+                />
+              </div>
+            </div>
+            <div className='flex flex-wrap w-1/3'>
+              <div className='p-1 w-full md:p-2'>
+                <img
+                  alt='gallery'
+                  className='block object-cover object-center w-full h-full rounded-lg transition duration-150 ease-in-out hover:scale-105'
+                  src='/cameras.jpg'
+                />
+              </div>
+            </div>
+            <div className='flex flex-wrap w-1/3'>
+              <div className='p-1 w-full md:p-2'>
+                <img
+                  alt='gallery'
+                  className='block object-cover object-center w-full h-full rounded-lg transition duration-150 ease-in-out hover:scale-105'
+                  src='/chair.jpg'
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <button
-          className='flex absolute inset-y-0 left-0 justify-center items-center p-0 text-center hover:no-underline focus:no-underline border-0 hover:outline-none focus:outline-none carousel-control-prev'
-          type='button'
-          data-bs-target='#carouselExampleControls'
-          data-bs-slide='prev'
-        >
-          <span
-            className='inline-block bg-no-repeat carousel-control-prev-icon'
-            aria-hidden='true'
-          ></span>
-          <span className='visually-hidden'>Previous</span>
-        </button>
-        <button
-          className='flex absolute inset-y-0 right-0 justify-center items-center p-0 text-center hover:no-underline focus:no-underline border-0 hover:outline-none focus:outline-none carousel-control-next'
-          type='button'
-          data-bs-target='#carouselExampleControls'
-          data-bs-slide='next'
-        >
-          <span
-            className='inline-block bg-no-repeat carousel-control-next-icon'
-            aria-hidden='true'
-          ></span>
-          <span className='visually-hidden'>Next</span>
-        </button>
-      </div>
+      </section>
 
       <section className='overflow-hidden text-gray-700'>
-        <div className='container py-2 px-5 mx-auto lg:px-32 lg:pt-24'>
+        <div className='container py-2 px-5 pb-20 mx-auto lg:px-20 lg:pt-8 '>
           <div className='flex flex-wrap -m-1 md:-m-2'>
             <div className='flex flex-wrap w-1/2'>
               <div className='p-1 w-1/2 md:p-2'>
                 <img
                   alt='gallery'
-                  className='block object-cover object-center w-full h-full rounded-lg'
-                  src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp'
+                  className='block object-cover object-center w-full h-full rounded-lg transition duration-150 ease-in-out hover:scale-105'
+                  src='/plant1.jpg'
                 />
               </div>
               <div className='p-1 w-1/2 md:p-2'>
                 <img
                   alt='gallery'
-                  className='block object-cover object-center w-full h-full rounded-lg'
-                  src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp'
+                  className='block object-cover object-center w-full h-full rounded-lg transition duration-150 ease-in-out hover:scale-105'
+                  src='/plant2.jpg'
                 />
               </div>
               <div className='p-1 w-full md:p-2'>
                 <img
                   alt='gallery'
-                  className='block object-cover object-center w-full h-full rounded-lg'
-                  src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp'
+                  className='block object-cover object-center w-full h-full rounded-lg transition duration-150 ease-in-out hover:scale-105'
+                  src='/plant3.jpg'
                 />
               </div>
             </div>
@@ -86,22 +100,22 @@ const ImageGallery = () => {
               <div className='p-1 w-full md:p-2'>
                 <img
                   alt='gallery'
-                  className='block object-cover object-center w-full h-full rounded-lg'
-                  src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp'
+                  className='block object-cover object-center w-full h-full rounded-lg transition duration-150 ease-in-out hover:scale-105'
+                  src='/plant1.jpg'
                 />
               </div>
               <div className='p-1 w-1/2 md:p-2'>
                 <img
                   alt='gallery'
-                  className='block object-cover object-center w-full h-full rounded-lg'
-                  src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp'
+                  className='block object-cover object-center w-full h-full rounded-lg transition duration-150 ease-in-out hover:scale-105'
+                  src='/plant2.jpg'
                 />
               </div>
               <div className='p-1 w-1/2 md:p-2'>
                 <img
                   alt='gallery'
-                  className='block object-cover object-center w-full h-full rounded-lg'
-                  src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp'
+                  className='block object-cover object-center w-full h-full rounded-lg transition duration-150 ease-in-out hover:scale-105'
+                  src='/plant3.jpg'
                 />
               </div>
             </div>

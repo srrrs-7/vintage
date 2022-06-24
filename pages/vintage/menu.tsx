@@ -1,9 +1,19 @@
+import dynamic from 'next/dynamic';
 import React from 'react';
+import Header from '../../components/Header';
+import MenuPage from '../../components/MenuPage';
 
-type Props = {};
+const AvoidSSRMenuPage = dynamic(() => import('../../components/MenuPage'), { ssr: false });
 
-const Menu = (props: Props) => {
-  return <div>menu</div>;
+const Menu = () => {
+  return (
+    <div>
+      <Header />
+      <div>
+        <AvoidSSRMenuPage />
+      </div>
+    </div>
+  );
 };
 
 export default Menu;

@@ -1,14 +1,15 @@
-import type { NextPage } from 'next';
+import dynamic from 'next/dynamic';
+import React from 'react';
 import Header from '../components/Header';
-import ImageGallery from '../components/ImageGallery';
-import MovieSlider from '../components/MovieSlider';
 
-const Home: NextPage = () => {
+const AvoidSSRMovieSlider = dynamic(() => import('../components/MovieSlider'), { ssr: false });
+
+const Home = () => {
   return (
     <div>
       <Header />
       <div>
-        <MovieSlider />
+        <AvoidSSRMovieSlider />
       </div>
     </div>
   );

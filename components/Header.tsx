@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div>
       <nav className='flex relative top-0 justify-between items-center py-2 w-full h-20 bg-blue-800 shadow-lg'>
-        <div className='p-2 ml-28 rounded-full'>
+        <div className='p-2 ml-20 rounded-full'>
           <Link href='/'>
             <Image
               src='/logo.png'
@@ -23,7 +23,7 @@ const Header = () => {
               <li>
                 <a
                   className='block py-2 pr-2 mx-4 font-serif text-white hover:text-orange-400 transition duration-150 ease-in-out hover:scale-110 lg:px-2'
-                  href='/vintage/home'
+                  href='/'
                   data-mdb-ripple='true'
                   data-mdb-ripple-color='light'
                 >
@@ -43,7 +43,7 @@ const Header = () => {
               <li>
                 <a
                   className='block py-2 pr-2 mx-4 font-serif text-white hover:text-orange-400 transition duration-150 ease-in-out hover:scale-110 lg:px-2'
-                  href='/vintage/Menu'
+                  href='/vintage/menu'
                   data-mdb-ripple='true'
                   data-mdb-ripple-color='light'
                 >
