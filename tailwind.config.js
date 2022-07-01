@@ -1,29 +1,13 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
     mode: 'jit',
     content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-    darkMode: true, // or 'media' or 'class'
+    darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {},
     },
     variants: {
-        extend: {
-            keyframes: {
-                wave: {
-                    '0%': { transform: 'rotate(0.0deg)' },
-                    '10%': { transform: 'rotate(14deg)' },
-                    '20%': { transform: 'rotate(-8deg)' },
-                    '30%': { transform: 'rotate(14deg)' },
-                    '40%': { transform: 'rotate(-4deg)' },
-                    '50%': { transform: 'rotate(10.0deg)' },
-                    '60%': { transform: 'rotate(0.0deg)' },
-                    '100%': { transform: 'rotate(0.0deg)' },
-                },
-            },
-            animation: {
-                'waving-hand': 'wave 2s linear infinite',
-            },
-        },
+        extend: {},
     },
-    content: ['./src/**/*.{html,js,ts}', './node_modules/tw-elements/dist/js/**/*.js'],
-    plugins: [require('tw-elements/dist/plugin')],
+    plugins: [require('tailwindcss'), require('autoprefixer')],
 };

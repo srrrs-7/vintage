@@ -4,67 +4,43 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div>
-      <nav className='flex relative top-0 justify-between items-center py-2 w-full h-20 bg-blue-800 shadow-lg'>
-        <div className='p-2 ml-20 rounded-full'>
+    <>
+      <div className=' flex justify-center items-center p-2 bg-blue-800'>
+        <Link href='/'>
+          <Image
+            src='/logo.png'
+            alt='vintage_logo'
+            width={60}
+            height={60}
+            className='bg-blue-800 rounded-full cursor-pointer'
+          />
+        </Link>
+      </div>
+      <div className='flex justify-center items-center p-1 bg-blue-700'>
+        <div className='flex justify-center items-center space-x-20'>
           <Link href='/'>
-            <Image
-              src='/logo.png'
-              alt='vintage_logo'
-              width={60}
-              height={60}
-              className='bg-blue-800 rounded-full cursor-pointer'
-            />
+            <a className='block py-2 pr-2 mx-4 font-serif text-xl text-white hover:text-orange-400 transition duration-150 ease-in-out hover:scale-110 lg:px-2'>
+              Home
+            </a>
+          </Link>
+          <Link href='/vintage/gallery'>
+            <a className='block py-2 pr-2 mx-4 font-serif text-xl text-white hover:text-orange-400 transition duration-150 ease-in-out hover:scale-110 lg:px-2'>
+              Gallery
+            </a>
+          </Link>
+          <Link href='/vintage/menu'>
+            <a className='block py-2 pr-2 mx-4 font-serif text-xl text-white hover:text-orange-400 transition duration-150 ease-in-out hover:scale-110 lg:px-2'>
+              Menu
+            </a>
+          </Link>
+          <Link href='/vintage/access'>
+            <a className='block py-2 pr-2 mx-4 font-serif text-xl text-white hover:text-orange-400 transition duration-150 ease-in-out hover:scale-110 lg:px-2'>
+              Access
+            </a>
           </Link>
         </div>
-        <div className='flex justify-between items-center px-6 mr-10 ml-auto'>
-          <div className='grow items-center'>
-            <ul className='space-x-7 lg:flex lg:flex-row'>
-              <li>
-                <a
-                  className='block py-2 pr-2 mx-4 font-serif text-white hover:text-orange-400 transition duration-150 ease-in-out hover:scale-110 lg:px-2'
-                  href='/'
-                  data-mdb-ripple='true'
-                  data-mdb-ripple-color='light'
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  className='block py-2 pr-2 mx-4 font-serif text-white hover:text-orange-400 transition duration-150 ease-in-out hover:scale-110 lg:px-2'
-                  href='/vintage/gallery'
-                  data-mdb-ripple='true'
-                  data-mdb-ripple-color='light'
-                >
-                  Gallery
-                </a>
-              </li>
-              <li>
-                <a
-                  className='block py-2 pr-2 mx-4 font-serif text-white hover:text-orange-400 transition duration-150 ease-in-out hover:scale-110 lg:px-2'
-                  href='/vintage/menu'
-                  data-mdb-ripple='true'
-                  data-mdb-ripple-color='light'
-                >
-                  Menu
-                </a>
-              </li>
-              <li>
-                <a
-                  className='block py-2 pr-2 mx-4 font-serif text-white hover:text-orange-400 transition duration-150 ease-in-out hover:scale-110 lg:px-2'
-                  href='/vintage/access'
-                  data-mdb-ripple='true'
-                  data-mdb-ripple-color='light'
-                >
-                  Access
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+      </div>
+    </>
   );
 };
 
