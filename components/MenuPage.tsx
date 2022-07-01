@@ -3,9 +3,9 @@ import 'tw-elements';
 
 const MenuPage = () => {
   return (
-    <div className='p-10 h-full bg-orange-200'>
+    <div className='p-10 h-full bg-orange-300'>
       <div className='flex'>
-        <h5 className='mx-auto font-serif text-6xl text-gray-900'>M E N U</h5>
+        <h5 className='mx-auto font-serif text-6xl text-blue-500'>M E N U</h5>
       </div>
       <div className='flex justify-center pt-10 space-x-7'>
         <div className='max-w-sm bg-white rounded-lg shadow-lg transition ease-in-out delay-100 hover:scale-105'>

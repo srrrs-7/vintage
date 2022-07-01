@@ -3,7 +3,7 @@ import 'tw-elements';
 
 const ImageGallery = () => {
   return (
-    <div className='bg-orange-100'>
+    <div className='bg-orange-300'>
       <div className='flex'>
         <h2 className='p-5 mx-auto font-serif text-7xl text-green-600 animate-pulse'>
           Photo Gallery
