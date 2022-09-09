@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/srrrs/App/PJT/Vintage/vintage'
+make: Leaving directory `/Users/srrrs/App/PJT/Vintage/vintage'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
