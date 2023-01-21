@@ -5,9 +5,7 @@ const ImageGallery = () => {
   return (
     <div className='bg-orange-300'>
       <div className='flex'>
-        <h2 className='p-5 mx-auto font-serif text-7xl text-green-600 animate-pulse'>
-          Photo Gallery
-        </h2>
+        <h2 className='p-5 mx-auto font-serif text-7xl text-white animate-pulse'>Photo Gallery</h2>
       </div>
       <section className='overflow-hidden text-gray-700 '>
         <div className='container py-2 px-5 mx-auto lg:px-20 lg:pt-2'>

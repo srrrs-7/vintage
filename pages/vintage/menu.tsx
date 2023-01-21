@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import React from 'react';
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import MenuPage from '../../components/MenuPage';
 
@@ -9,9 +10,8 @@ const Menu = () => {
   return (
     <div>
       <Header />
-      <div>
-        <AvoidSSRMenuPage />
-      </div>
+      <AvoidSSRMenuPage />
+      <Footer />
     </div>
   );
 };

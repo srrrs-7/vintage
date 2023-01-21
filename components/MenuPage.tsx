@@ -5,11 +5,12 @@ const MenuPage = () => {
   return (
     <div className='p-10 h-full bg-orange-300'>
       <div className='flex'>
-        <h5 className='mx-auto font-serif text-6xl text-blue-500'>M E N U</h5>
+        <h5 className='mx-auto font-serif text-6xl text-white'>M E N U</h5>
       </div>
+
       <div className='flex justify-center pt-10 space-x-7'>
         <div className='max-w-sm bg-white rounded-lg shadow-lg transition ease-in-out delay-100 hover:scale-105'>
-          <img className='rounded-t-lg' src='/rs1.jpg' alt='' />
+          <img className='w-full rounded-t-lg' src='/logo1.png' alt='logo' />
           <div className='p-6'>
             <div className='flex'>
               <h5 className='pb-4 mx-auto font-serif text-4xl font-medium text-gray-900 underline underline-offset-4'>
@@ -46,8 +47,9 @@ const MenuPage = () => {
             </div>
           </div>
         </div>
+
         <div className='max-w-sm bg-white rounded-lg shadow-lg transition ease-in-out delay-100 hover:scale-105'>
-          <img className='rounded-t-lg w-120' src='/rs2.jpg' alt='' />
+          <img className='w-full rounded-t-lg' src='/logo1.png' alt='logo' />
           <div className='p-6'>
             <div className='flex'>
               <h5 className='pb-4 mx-auto font-serif text-4xl font-medium text-gray-900 underline underline-offset-4'>
@@ -76,8 +78,9 @@ const MenuPage = () => {
             </div>
           </div>
         </div>
+
         <div className='max-w-sm bg-white rounded-lg shadow-lg transition ease-in-out delay-100 hover:scale-105'>
-          <img className='rounded-t-lg' src='/rs3.jpg' alt='' />
+          <img className='w-full rounded-t-lg' src='/logo1.png' alt='logo' />
           <div className='p-6'>
             <div className='flex'>
               <h5 className='pb-4 mx-auto font-serif text-4xl font-medium text-gray-900 underline underline-offset-4'>
@@ -114,8 +117,9 @@ const MenuPage = () => {
             </div>
           </div>
         </div>
+
         <div className='max-w-sm bg-white rounded-lg shadow-lg transition ease-in-out delay-100 hover:scale-105'>
-          <img className='rounded-t-lg' src='/rs4.jpg' alt='' />
+          <img className='w-full rounded-t-lg' src='/logo1.png' alt='logo' />
           <div className='p-6'>
             <div className='flex'>
               <h5 className='pb-4 mx-auto font-serif text-4xl font-medium text-gray-900 underline underline-offset-4'>
