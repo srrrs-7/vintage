@@ -10,6 +10,9 @@ const Home = () => {
     <div>
       <Header />
       <AvoidSSRMovieSlider />
+      <div className='pt-[410px] mt-[410px]'>
+        <Footer />
+      </div>
     </div>
   );
 };
