@@ -4,7 +4,7 @@ const MovieSlider = () => {
   return (
     <>
       <div>
-        <video className='fixed top-0 left-0 -z-50 w-full' playsInline autoPlay muted loop>
+        <video className='fixed top-0 left-0 -z-50 w-full h-auto' playsInline autoPlay muted loop>
           <source src='vintage.mp4' type='video/mp4' />
         </video>
 
