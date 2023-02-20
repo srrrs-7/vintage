@@ -8,7 +8,7 @@ const MenuPage = () => {
         <h5 className='mx-auto font-serif text-6xl text-white'>M E N U</h5>
       </div>
 
-      <div className='flex overflow-scroll justify-center items-center px-64 pb-44 space-x-1 sm:flex-col sm:p-0 sm:-space-y-44'>
+      <div className='flex overflow-scroll flex-row justify-center items-center px-64 pb-44 space-x-1 sm:flex-col sm:p-0 sm:-space-y-44'>
         <div className='max-w-sm bg-white rounded-lg shadow-lg sm:scale-75'>
           <img className='w-full rounded-t-lg' src='/logo1.png' alt='logo' />
           <div className=''>
