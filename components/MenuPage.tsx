@@ -23,7 +23,7 @@ const MenuPage = () => {
                   <p className='px-5 text-xl'>レギュラー</p>
                   <p className='px-5 text-xl'>3,800</p>
                 </li>
-                <li className='flex justify-between items-center px-6 w-full hover:bg-orange-300 rounded-lg border-b border-gray-200 ∆py-4'>
+                <li className='flex justify-between items-center py-4 px-6 w-full hover:bg-orange-300 rounded-lg border-b border-gray-200'>
                   <p className='px-5 text-xl'>大学生</p>
                   <p className='px-5 text-xl'>3,500</p>
                 </li>
