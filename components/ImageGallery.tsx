@@ -3,7 +3,7 @@ import 'tw-elements';
 
 const ImageGallery = () => {
   return (
-    <div className='bg-orange-300'>
+    <div className='overflow-scroll fixed w-[100%] h-[100%] bg-orange-300'>
       <div className='flex'>
         <h2 className='p-5 mx-auto font-serif text-7xl text-white animate-pulse'>Photo Gallery</h2>
       </div>

@@ -3,13 +3,13 @@ import 'tw-elements';
 
 const MenuPage = () => {
   return (
-    <div className='p-10 h-full bg-orange-300'>
+    <div className='overflow-scroll fixed top-20 left-0 pt-10 w-[100%] h-[100%] bg-orange-300'>
       <div className='flex'>
         <h5 className='mx-auto font-serif text-6xl text-white'>M E N U</h5>
       </div>
 
-      <div className='flex justify-center pt-10 space-x-7'>
-        <div className='max-w-sm bg-white rounded-lg shadow-lg transition ease-in-out delay-100 hover:scale-105'>
+      <div className='flex overflow-scroll justify-center items-center px-64 pt-1 pb-44 space-x-1 sm:flex-col sm:-space-y-44'>
+        <div className='max-w-sm bg-white rounded-lg shadow-lg sm:scale-75'>
           <img className='w-full rounded-t-lg' src='/logo1.png' alt='logo' />
           <div className='p-6'>
             <div className='flex'>
@@ -48,7 +48,7 @@ const MenuPage = () => {
           </div>
         </div>
 
-        <div className='max-w-sm bg-white rounded-lg shadow-lg transition ease-in-out delay-100 hover:scale-105'>
+        <div className='max-w-sm bg-white rounded-lg shadow-lg sm:scale-75'>
           <img className='w-full rounded-t-lg' src='/logo1.png' alt='logo' />
           <div className='p-6'>
             <div className='flex'>
@@ -79,7 +79,7 @@ const MenuPage = () => {
           </div>
         </div>
 
-        <div className='max-w-sm bg-white rounded-lg shadow-lg transition ease-in-out delay-100 hover:scale-105'>
+        <div className='max-w-sm bg-white rounded-lg shadow-lg sm:scale-75'>
           <img className='w-full rounded-t-lg' src='/logo1.png' alt='logo' />
           <div className='p-6'>
             <div className='flex'>
@@ -118,7 +118,7 @@ const MenuPage = () => {
           </div>
         </div>
 
-        <div className='max-w-sm bg-white rounded-lg shadow-lg transition ease-in-out delay-100 hover:scale-105'>
+        <div className='max-w-sm bg-white rounded-lg shadow-lg sm:scale-75'>
           <img className='w-full rounded-t-lg' src='/logo1.png' alt='logo' />
           <div className='p-6'>
             <div className='flex'>

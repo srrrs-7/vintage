@@ -15,10 +15,10 @@ const MovieSlider = () => {
         </video>
 
         <div className='z-20'>
-          <p className='flex fixed z-10 justify-center items-center w-full h-full font-serif text-9xl text-gray-300 underline underline-offset-4 animate-pulse sm:text-6xl'>
+          <p className='flex fixed z-10 justify-center w-[100%] h-[100%] font-serif text-9xl text-gray-300 underline underline-offset-4 animate-pulse sm:top-48 sm:text-6xl md:top-64 lg:top-96'>
             V I N T A G E
           </p>
-          <p className='flex fixed z-10 justify-center items-center mt-28  w-full h-full font-serif text-6xl text-gray-200 animate-pulse sm:text-3xl'>
+          <p className='flex fixed z-10 justify-center mt-28 w-[100%]  h-[100%] font-serif text-6xl text-gray-200 animate-pulse sm:top-48 sm:text-3xl md:top-64 lg:top-96'>
             Hair Studio
           </p>
         </div>
