@@ -8,7 +8,7 @@ const MenuPage = () => {
         <h5 className='mx-auto font-serif text-6xl text-white'>M E N U</h5>
       </div>
 
-      <div className='flex overflow-scroll flex-row justify-center items-center px-64 pb-44 space-x-1 sm:flex-col sm:p-0 sm:-space-y-44'>
+      <div className='flex overflow-scroll justify-center items-center px-64 pb-44 space-x-1 sm:flex-col sm:p-0 sm:-space-y-44 md:flex-row lg:flex-row'>
         <div className='max-w-sm bg-white rounded-lg shadow-lg sm:scale-75'>
           <img className='w-full rounded-t-lg' src='/logo1.png' alt='logo' />
           <div className=''>
@@ -23,7 +23,7 @@ const MenuPage = () => {
                   <p className='px-5 text-xl'>レギュラー</p>
                   <p className='px-5 text-xl'>3,800</p>
                 </li>
-                <li className='flex justify-between items-center py-4 px-6 w-full hover:bg-orange-300 rounded-lg border-b border-gray-200'>
+                <li className='flex justify-between items-center px-6 w-full hover:bg-orange-300 rounded-lg border-b border-gray-200 ∆py-4'>
                   <p className='px-5 text-xl'>大学生</p>
                   <p className='px-5 text-xl'>3,500</p>
                 </li>
