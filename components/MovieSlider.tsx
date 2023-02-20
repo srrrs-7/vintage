@@ -4,7 +4,14 @@ const MovieSlider = () => {
   return (
     <>
       <div>
-        <video className='flex fixed left-0 z-10 w-[100%]' autoPlay loop>
+        <video
+          className='flex fixed left-0 z-10 w-[100%]'
+          playsInline
+          webkit-playsinline
+          autoPlay
+          loop
+          muted
+        >
           <source src='vintage.mp4' type='video/mp4' />
         </video>
 
@@ -12,7 +19,7 @@ const MovieSlider = () => {
           <p className='flex fixed z-10 justify-center w-[100%] h-[100%] font-serif text-gray-300 underline underline-offset-4 animate-pulse sm:top-[150px] sm:text-xl md:top-64 lg:top-96'>
             V I N T A G E
           </p>
-          <p className='flex fixed z-10 justify-center mt-28 w-[100%]  h-[100%] font-serif text-gray-200 animate-pulse sm:top-[70px] md:top-44 lg:top-80 sm:text-md'>
+          <p className='flex fixed z-10 justify-center mt-28 w-[100%]  h-[100%] font-serif text-gray-200 animate-pulse sm:top-[70px] sm:text-base md:top-44 lg:top-80'>
             Hair Studio
           </p>
         </div>
