@@ -6,6 +6,7 @@ const MovieSlider = () => {
       <div>
         <video
           className='flex fixed left-0 z-10 w-[100%]'
+          controls
           playsInline
           webkit-playsinline
           autoPlay
