@@ -2,8 +2,8 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div className='flex justify-center items-center w-full h-72 font-serif bg-blue-800'>
-      <h1 className='text-3xl text-white'> - Vintage - </h1>
+    <div className='flex absolute bottom-0 justify-center items-center w-full font-serif'>
+      <h1 className='text-4xl text-white'> - Vintage - </h1>
     </div>
   );
 }

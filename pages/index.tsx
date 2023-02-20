@@ -7,12 +7,10 @@ const AvoidSSRMovieSlider = dynamic(() => import('../components/MovieSlider'), {
 
 const Home = () => {
   return (
-    <div>
+    <div className='-z-50 '>
       <Header />
       <AvoidSSRMovieSlider />
-      <div className='pt-[410px] mt-[410px]'>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 };

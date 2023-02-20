@@ -5,7 +5,7 @@ import React from 'react';
 const Header = () => {
   return (
     <>
-      <div className='flex justify-between items-center py-3 px-40 bg-blue-800'>
+      <div className='flex z-50 justify-between items-center py-3 px-40 w-full'>
         <Link href='/'>
           <Image
             src='/logo.png'
