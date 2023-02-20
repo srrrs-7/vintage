@@ -120,6 +120,17 @@ const ImageGallery = () => {
           </div>
         </div>
       </section>
+
+      <section className='grid grid-cols-3 grid-rows-3 gap-10 justify-center items-center mx-auto w-[400px] h-[450px]'>
+        <img src='/inside.jpg' alt='gallery' className='rounded-lg' />
+        <img src='/menu.jpg' alt='gallery' className='rounded-lg' />
+        <img src='/inside2.jpg' alt='gallery' className='rounded-lg' />
+        <img src='/shop.jpg' alt='gallery' className='rounded-lg' />
+        <img src='/camera.jpg' alt='gallery' className='rounded-lg' />
+        <img src='/logo1.png' alt='gallery' className='rounded-lg' />
+      </section>
+
+      <div className='mb-18'></div>
     </div>
   );
 };
