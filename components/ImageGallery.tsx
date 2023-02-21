@@ -122,15 +122,18 @@ const ImageGallery = () => {
       </section>
 
       <section className='grid grid-cols-3 grid-rows-3 gap-10 justify-center items-center mx-auto w-[400px] h-[450px]'>
-        <img src='/inside.jpg' alt='gallery' className='rounded-lg' />
-        <img src='/menu.jpg' alt='gallery' className='rounded-lg' />
-        <img src='/inside2.jpg' alt='gallery' className='rounded-lg' />
-        <img src='/shop.jpg' alt='gallery' className='rounded-lg' />
-        <img src='/camera.jpg' alt='gallery' className='rounded-lg' />
-        <img src='/logo1.png' alt='gallery' className='rounded-lg' />
+        <img src='/inside.jpg' alt='gallery' className='rounded-lg hover:scale-105' />
+        <img src='/menu.jpg' alt='gallery' className='rounded-lg hover:scale-105' />
+        <img src='/inside2.jpg' alt='gallery' className='rounded-lg hover:scale-105' />
+        <img src='/shop.jpg' alt='gallery' className='rounded-lg hover:scale-105' />
+        <img src='/camera.jpg' alt='gallery' className='rounded-lg hover:scale-105' />
+        <img src='/logo1.png' alt='gallery' className='rounded-lg hover:scale-105' />
+        <img src='/new1.jpg' alt='gallery' className='rounded-lg hover:scale-105' />
+        <img src='/new2.jpg' alt='gallery' className='rounded-lg hover:scale-105' />
+        <img src='/new3.jpg' alt='gallery' className='rounded-lg hover:scale-105' />
       </section>
 
-      <div className='mb-18'></div>
+      <div className='mb-44'></div>
     </div>
   );
 };
