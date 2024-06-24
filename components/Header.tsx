@@ -22,16 +22,6 @@ const Header = () => {
               Home
             </a>
           </Link>
-          <Link href='/vintage/gallery'>
-            <a className='block py-2 pr-2 mx-4 font-serif text-xl text-white hover:text-orange-400 transition duration-150 ease-in-out hover:scale-110 lg:px-2'>
-              Gallery
-            </a>
-          </Link>
-          <Link href='/vintage/menu'>
-            <a className='block py-2 pr-2 mx-4 font-serif text-xl text-white hover:text-orange-400 transition duration-150 ease-in-out hover:scale-110 lg:px-2'>
-              Menu
-            </a>
-          </Link>
           <Link href='/vintage/access'>
             <a className='block py-2 pr-2 mx-4 font-serif text-xl text-white hover:text-orange-400 transition duration-150 ease-in-out hover:scale-110 lg:px-2'>
               Access
