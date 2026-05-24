@@ -1,12 +1,2 @@
-# netlify.toml
-# 静的HTML/CSS/JS構成 (ビルドステップなし)
-
 [build]
-  publish = "."   # index.html があるリポジトリのルートを公開
-  # command は指定しない (ビルド不要)
-
-# Next.js プラグインを無効化 (このサイトはNext.jsを使用していません)
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-  [plugins.inputs]
-    enable = false
+  publish = "."
