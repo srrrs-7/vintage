@@ -1,34 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hair Studio Vintage - Official Website
 
-## Getting Started
+理美容室 **「Hair Studio Vintage」** の公式サイトです。
+従来のNext.js構成から、超軽量かつ爆速で動作する **HTML / CSS / JavaScript（バニラ）の最小構成** へ移行し、店舗コンセプトにふさわしい最高峰の「ヴィンテージ・モダン＆プレミアムラグジュアリー」デザインへと一新しました。
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
+## 💻 特徴
+
+### 1. 超軽量・ノービルドの爆速表示
+* 重たいフレームワークやビルドステップ（Webpack / Babel / Next.js / React / TypeScript / Tailwindビルド）を完全に排除。
+* ファイルをダブルクリックするか、任意の静的サーバーを立ち上げるだけで瞬時に起動し、ロード時間は極限まで短縮されています。
+
+### 2. 「ヴィンテージ・モダン＆プレミアム」デザイン
+* **配色**: 渋みと高級感のあるダークマッドブルー（`#101622`）を基調に、温かみのあるアースオレンジ（`#E67E22`）をアクセントカラーにした上質な色彩設計。
+* **ヘッダー**: ページ上部では背景動画に美しく溶け込む透過オレンジグラデーション、スクロール時はすりガラス効果（`backdrop-filter`）を伴う半透明オレンジに滑らかに変化します。
+* **フォント**: 見出しには格式高いセリフ体（`Playfair Display`）、本文には極上のサンセリフ体（`Montserrat`）を Google Fonts より採用。
+
+### 3. 主な機能とインタラクション
+* **Home (`index.html`)**: 背景動画（`vintage.mp4`）の全画面自動ループ再生。動画の上にラジアルな遮光レイヤーを重ねることで、文字の可読性を極限まで高めています。
+* **Menu (`menu.html`)**: ハサミやエステを表現した美麗なオリジナルSVGアイコンを添え、気品あるカード型レイアウトで構成した料金表。
+* **Gallery (`gallery.html`)**: 変則モザイク状の美しいグリッドレイアウト。画像クリックでバニラJSによる滑らかで軽量な拡大モーダル（Lightbox）が起動。
+* **Access (`access.html`)**: 住所と電話番号情報を掲載した高級感あるパネルと、視認性を最優先して明るい白背景で表示される最新のGoogleマップ（プレースIDピン固定）。
+* **スクロールフェードイン**: `Intersection Observer API` を用いて、ユーザーのスクロールに合わせて各パーツが下から上品に浮かび上がるようにフェードインします。
+* **レスポンシブデザイン**: スマートフォン、タブレット、PCのすべての画面サイズで、完全に最適化されたラグジュアリーな表示を提供します。
+
+---
+
+## 📂 ディレクトリ構成
+
+```
+vintage/
+├── index.html       (ホーム: 全画面背景ビデオとメインビジュアル)
+├── menu.html        (施術メニュー: 高級料金表カード)
+├── gallery.html     (フォトギャラリー: 拡大モーダル付きの店舗写真)
+├── access.html      (アクセス: 住所、連絡先、マップ)
+├── css/
+│   └── style.css    (デザインシステム、フォント、すべてのアニメーション)
+├── js/
+│   └── main.js      (ヘッダー制御、スクロールアニメーション、Lightbox制御)
+├── public/          (画像・動画アセット)
+└── README.md        (本ドキュメント)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 🚀 ローカルでのプレビュー方法
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+プレーンな静的HTML/CSS/JS構成のため、あらゆるローカルサーバーで即座に動作します。
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+ターミナルで本プロジェクトのルートディレクトリに移動し、以下のコマンドを実行するだけでプレビュー可能です：
 
-## Learn More
+```bash
+# Python3 を使用してポート 8000 でプレビュー用サーバーを起動
+python3 -m http.server 8000
+```
 
-To learn more about Next.js, take a look at the following resources:
+サーバーが起動したら、ブラウザで [http://localhost:8000](http://localhost:8000) を開くことで、一新された公式ウェブサイトをご確認いただけます。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📝 ライセンス & クレジット
+&copy; 2026 Hair Studio Vintage. All Rights Reserved.
